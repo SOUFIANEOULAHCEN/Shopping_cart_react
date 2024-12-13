@@ -1,0 +1,38 @@
+white :#FFFFFF
+
+#FF9C72
+#37BC7C
+#556FF6
+#B2B2B2
+
+#E09A32
+
+
+export const colors = {
+  // Couleurs principales
+  primary: {
+    900: '#1a1a1a', // Noir profond
+    800: '#2d2d2d', // Noir charbon
+    700: '#404040', // Gris foncé
+    600: '#525252', // Gris moyen foncé
+  },
+  
+  // Accents
+  accent: {
+    slate: '#64748b',    // Gris bleuté
+    navy: '#334155',     // Bleu marine foncé
+    charcoal: '#3f3f46', // Gris charbon
+  },
+
+  // Gris neutres
+  neutral: {
+    400: '#737373', // Gris moyen
+    300: '#a3a3a3', // Gris clair
+    200: '#e5e5e5', // Gris très clair
+    100: '#f5f5f5', // Presque blanc
+  }
+}
+
+// Les tons `primary` pour les textes et éléments principaux
+// Les `accent` pour les boutons et éléments interactifs
+// Les `neutral` pour les arrière-plans et les bordures
