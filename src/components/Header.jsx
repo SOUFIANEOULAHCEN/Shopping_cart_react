@@ -1,5 +1,6 @@
 import { MdSearch, MdShoppingCart } from "react-icons/md";
 import { IoMdPerson } from "react-icons/io";
+import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header className="w-full h-auto bg-gray-50 text-gray-900">
@@ -12,54 +13,57 @@ export default function Header() {
           />
         </div>
         <nav className="flex gap-4 text-sm">
-          <a
-            href=""
+          <Link
+            to="/"
             className="hover:text-gray-500 duration-150 transition-colors"
           >
             New
-          </a>
+          </Link>
 
-          <a
-            href=""
+          <Link
+            to="/"
             className="hover:text-gray-500 duration-150 transition-colors"
           >
             Kids
-          </a>
-          <a
-            href=""
+          </Link>
+          <Link
+            to="/"
             className="hover:text-gray-500 duration-150 transition-colors"
           >
             Accessoires
-          </a>
-          <a
-            href=""
+          </Link>
+          <Link
+            to="/"
             className="hover:text-gray-500 duration-150 transition-colors"
           >
             Collections
-          </a>
-          <a
-            href=""
+          </Link>
+          <Link
+            to="/"
             className="hover:text-gray-500 duration-150 transition-colors"
           >
             Sale
-          </a>
+          </Link>
         </nav>
         <div className="flex justify-between gap-2 text-xl">
           {/* <MdSearch /> */}
           <div className="hover:text-gray-500 transition-colors duration-300 cursor-pointer">
             <MdSearch size={24} />
           </div>
-          <div className="relative hover:text-gray-500 transition-colors duration-300 cursor-pointer">
-            <span className="bg-red-600 absolute w-3 h-3 rounded-full right-0 "></span>
-            <MdShoppingCart size={24} />
-          </div>
+          <Link to="/ShoppingBag">
+            {" "}
+            <div className="relative hover:text-gray-500 transition-colors duration-300 cursor-pointer">
+              <span className="bg-red-600 absolute w-3 h-3 rounded-full right-0 "></span>
+              <MdShoppingCart size={24} />
+            </div>
+          </Link>
           <div className="hover:text-gray-500 transition-colors duration-300 cursor-pointer">
             <IoMdPerson size={24} />
           </div>
         </div>
       </div>
       <div className="w-full h-[30vh] relative">
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="text-gray-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
           <h1 className="font-bold text-2xl mb-2">New Arrivals</h1>
           <p className="leading-tight text-sm">
